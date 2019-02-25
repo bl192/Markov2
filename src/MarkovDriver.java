@@ -28,6 +28,19 @@ public class MarkovDriver {
 	
 	public static void main(String[] args) {
 			
+		/*
+		EfficientMarkov a = new EfficientMarkov(3);
+		a.setTraining("bbbabbabbbbaba");
+		for(String m : a.myMap.keySet())
+		{
+			System.out.println(m + ": ");
+			for(String n : a.myMap.get(m))
+				System.out.print(n + " ");
+			System.out.println();
+		}
+		*/
+		 
+		
 		String filename = "data/trump-sou17.txt";
 		//String filename = "data/bush-sou07.txt";
 
@@ -39,9 +52,16 @@ public class MarkovDriver {
 		String text = TextSource.textFromFile(f);
 		//MarkovInterface<String> standard = new BaseMarkov();
 		MarkovInterface<String> efficient = new EfficientMarkov();
+<<<<<<< HEAD
 		MarkovInterface<WordGram> wmm = new BaseWordMarkov();
 		//MarkovInterface<WordGram> ewm = new EfficientWordMarkov();
 		markovGenerate(efficient,text);
+=======
+		//MarkovInterface<WordGram> wmm = new BaseWordMarkov();
+		//MarkovInterface<WordGram> ewm = new EfficientWordMarkov();
+		markovGenerate(efficient,text);
+		
+>>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 	}
 
 	private static void printNicely(String random, int screenWidth) {
