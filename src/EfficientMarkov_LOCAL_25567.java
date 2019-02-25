@@ -1,9 +1,6 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 import java.util.*;
 
-=======
->>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 =======
 >>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 import java.util.ArrayList;
@@ -26,10 +23,7 @@ public class EfficientMarkov extends BaseMarkov{
 	{
 		this(3);
 <<<<<<< HEAD
-<<<<<<< HEAD
 		myMap = new HashMap<>();
-=======
->>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 =======
 >>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 	}
@@ -38,11 +32,7 @@ public class EfficientMarkov extends BaseMarkov{
 	@Override
 	public void setTraining(String text) {
 <<<<<<< HEAD
-<<<<<<< HEAD
 		myText = text;
-=======
-		
->>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
 =======
 		
 >>>>>>> 24b83f11c2b042ee44983cc8473a2954a6ab6504
