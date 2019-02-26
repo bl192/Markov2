@@ -22,6 +22,7 @@ public class BaseWordMarkov implements MarkovInterface<WordGram> {
 	public BaseWordMarkov(int order){
 		myOrder = order;
 		myRandom = new Random(RANDOM_SEED);
+		
 	}
 	
 
@@ -39,6 +40,7 @@ public class BaseWordMarkov implements MarkovInterface<WordGram> {
 	 * @param start index in array words at which search begins
 	 * @return index of first occurrence of target (>= start) or -1
 	 * if not found
+	 * 
 	 */
 	protected int indexOf(String[] words, WordGram target, int start){
 		int size = target.length();
